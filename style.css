@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color: white;
+}
+
+a :link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container1 {
+    /* background: #4e54c8;
+    background: linear-gradient(to left, #8f94fb, #4e54c8); */
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.container1 .card {
+    margin: 2rem 3rem;
+    text-align: center;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0.45rem;
+}
+
+.container1 .card img {
+    padding: 2rem 2rem;
+    margin: 1rem;
+}
+
+.container2 .row {
+    justify-content: center;
+    margin: 2rem 2rem;
+}
+
+.container2 .row .col {
+    background-color: white;
+    justify-content: center;
+    margin: 2rem 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+    padding: 2rem 2rem;
+    animation: slide 2.5s infinite;
+    /* animation: slide 7.5s infinite; */
+}
+
+/* @keyframes slide {
+    0% {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    50% {
+        box-shadow: rgb(68, 151, 235) 0px 0px 20px;
+    }
+
+    100% {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+} */
+
+#button{
+    
+    background: white;
+    outline: 2px solid #10ca76fb;
+    outline-offset: -5px;
+    transition: 0.3s;
+    animation: slide1 5s infinite;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#button:hover{
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+/* #button::after{
+    content: "";
+    overflow: hidden;
+    animation: slide1 0.5s linear;
+} */
+/* #button :hover{
+    box-shadow: rgb(68, 151, 235) 0px 0px 20px;
+} */
+@keyframes slide1 {
+    0% {
+        background: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.bg {
+    animation: slide2 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #8f94fb 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+.bg1{
+    animation: slide2 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #10ca76fb 50%, rgb(51, 213, 167) 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+.bg4{
+    animation: slide2 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #D14D72 50%, #FFABAB 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+.bg5{
+    animation: slide2 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #D1512D 50%, #F5C7A9 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+.bg6{
+    animation: slide2 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #0090EF 50%,#00BAF9 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide2 {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+#table{
+    border-radius: 0.45rem;
+    padding: 2rem 2rem;
+    margin-bottom: 3rem;
+}
+
+#table h3{
+  background: -webkit-linear-gradient(#8f94fb, #09f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#table tr td{
+    color: black;
+    transition: 0.3s;
+}
+
+#table tr td:hover{
+    background: -webkit-linear-gradient(#8f94fb, #09f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid #8f94fb;
+}
+#button2{
+    outline: 2px solid white;
+    outline-offset: -5px;
+    background: -webkit-linear-gradient(#8f94fb, #09f);
+    color: white;
+    border-radius: 0.45rem;
+    transition: 0.3s;
+}
+
+#button2:hover{
+    outline: 2px solid #8f94fb;
+    outline-offset: 3px;
+}
+
+
+#button3{
+    background: white;
+    outline: 2px solid #D1512D;
+    outline-offset: -5px;
+    transition: 0.3s;
+    animation: slide1 5s infinite;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#button3:hover{
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+#button4{
+    background: white;
+    outline: 2px solid #D14D72;
+    outline-offset: -5px;
+    transition: 0.3s;
+    animation: slide1 5s infinite;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#button4:hover{
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+#button5{
+    background: white;
+    outline: 2px solid #0090EF;
+    outline-offset: -5px;
+    transition: 0.3s;
+    animation: slide1 5s infinite;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#button5:hover{
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+.container3{
+    background: black;
+    padding: 2rem 2rem;
+}
+
+
+#practice .row{
+    background: white;
+    padding: 1rem 1rem;
+    margin: 1rem 0rem;
+}
+iframe{
+    height: 500px;
+    width: 100%;
+}
+
+.footer{
+    background: black;
+}
